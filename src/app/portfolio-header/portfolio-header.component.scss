@@ -1,18 +1,32 @@
-.portfolio-header {
+@import '../../styles';
+
+ .portfolio-header {
   @include display-flex-only;
-  @include justify-content-space-around;
+  @include align-items(center);
+  background: $deepskyblue;
+  padding: 1em;
 }
 
 .portfolio-header__logo {
   text-transform: uppercase;
+  font-size: $base-font-size_xxl;
+  font-family: $font-family-handwriting;
+  color: $white;
+  padding: 0.5rem;
 }
 
 .portfolio-header__nav {
+  @include flex(1);
+  @include display-flex-only;
+  @include justify-content-end;
   @include list-reset;
 }
 
 .portfolio-header__nav a {
   display: block;
-  text-decoration: none;
-  color: #FFFFFF;
+  padding: 0.5rem;
+}
+
+.portfolio-header__nav_active {
+  border-bottom: 2px solid $white;
 }

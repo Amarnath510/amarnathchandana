@@ -1,6 +1,13 @@
-<app-portfolio-header></app-portfolio-header>
-<app-portfolio-about></app-portfolio-about>
-<app-portfolio-experience></app-portfolio-experience>
-<app-portfolio-education></app-portfolio-education>
-<app-portfolio-contact></app-portfolio-contact>
-<app-portfolio-footer></app-portfolio-footer>
+<div class="app">
+  <div class="app__header">
+    <app-portfolio-header></app-portfolio-header>
+  </div>
+  
+  <main class="app__main">
+    <router-outlet></router-outlet>
+  </main>
+  
+  <div class="app__footer">
+    <app-portfolio-footer></app-portfolio-footer>
+  </div>  
+</div>

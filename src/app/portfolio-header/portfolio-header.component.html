@@ -1,9 +1,29 @@
 <header class="portfolio-header">
-  <h1 class="portfolio-header__logo">chandana amarnath</h1>
+  <h1 class="portfolio-header__logo"><a href="about">chandana amarnath</a></h1>
   <ul class="portfolio-header__nav">
-    <li><a href="#">About</a></li>
-    <li><a href="#">Experience</a></li>
-    <li><a href="#">Education</a></li>
-    <li><a href="#">Contact</a></li>
+    <li>
+      <a href="about"
+        [class.portfolio-header__nav_active]="isActive('about')">
+        About
+      </a>
+    </li>
+    <li>
+      <a href="experience"
+        [class.portfolio-header__nav_active]="isActive('experience')">
+        Experience
+      </a>
+    </li>
+    <li>
+      <a href="education"
+        [class.portfolio-header__nav_active]="isActive('education')">
+        Education
+      </a>
+    </li>
+    <li>
+      <a href="contact"
+        [class.portfolio-header__nav_active]="isActive('contact')">
+        Contact
+      </a>
+    </li>
   </ul>
 </header>

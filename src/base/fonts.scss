@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+
+$font-family: 'Lato', sans-serif;
+$font-family-handwriting: 'Dancing Script', cursive;
+$font-family-icons: "Font Awesome 5 Brands";
+
+@mixin text-weight($weight: bold) {
+  @if $weight == bold {
+    font-weight: 700;
+  }
+
+  @if $weight == normal {
+    font-weight: 400;
+  }
+
+  @if $weight == light {
+    font-weight: 100;
+  }
+}

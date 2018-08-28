@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { PortfolioHeaderComponent } from './portfolio-header/portfolio-header.component';
@@ -8,6 +9,15 @@ import { PortfolioAboutComponent } from './portfolio-about/portfolio-about.compo
 import { PortfolioEducationComponent } from './portfolio-education/portfolio-education.component';
 import { PortfolioExperienceComponent } from './portfolio-experience/portfolio-experience.component';
 import { PortfolioContactComponent } from './portfolio-contact/portfolio-contact.component';
+
+const routes: Routes = [
+  { path: 'about', component: PortfolioAboutComponent },
+  { path: 'experience', component: PortfolioExperienceComponent },
+  { path: 'education', component: PortfolioEducationComponent },
+  { path: 'contact', component: PortfolioContactComponent },
+  { path: '', redirectTo: '/about', pathMatch: 'full' },
+  { path: '**', redirectTo: '/about', pathMatch: 'full' }
+];
 
 @NgModule({
   declarations: [
@@ -20,7 +30,8 @@ import { PortfolioContactComponent } from './portfolio-contact/portfolio-contact
     PortfolioContactComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

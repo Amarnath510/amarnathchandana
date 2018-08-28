@@ -1,0 +1,30 @@
+@import '../../styles';
+
+.portfolio-footer {
+  @include display-flex-only;
+  @include justify-content-center;
+  @include flex-direction(column);
+  color: $white;
+  background: $dark;
+  padding: 1em;
+}
+
+.portfolio-footer__content {
+  @include text-weight(light);
+}
+
+.portfolio-footer__icons {
+  @include display-flex-only;
+  @include justify-content-center;
+  @include align-items(center);
+  margin-bottom: 10px;
+}
+
+.portfolio-footer__icons a {
+  margin: 10px;
+}
+
+.portfolio-footer__icons .fab {
+  color: $white;
+  font-family: $font-family-icons;
+}

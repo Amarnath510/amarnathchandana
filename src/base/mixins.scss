@@ -1,3 +1,12 @@
+@mixin text-link($color: white) {
+  text-decoration: none;
+  color: $color;
+
+  &:hover {
+    color: $highlight-color;
+  }
+}
+
 @mixin list-reset() {
   list-style: none;
   padding: 0;
@@ -19,14 +28,14 @@
   zoom: 1;
 }
 
-@mixin flex($grow: 0, $shrink: 1, $basis: auto) {
+/* @mixin flex($grow: 0, $shrink: 1, $basis: auto) {
   @if $basis == 0px {
       -ms-flex: $grow $shrink auto; //ie10 needs auto
       -webkit-flex: $grow $shrink $basis;
       flex: $grow $shrink $basis;
   }
 }
-
+ */
 @mixin flex($grow: 0, $shrink: 1, $basis: auto) {
   -ms-flex: $grow $shrink $basis;
   -webkit-flex: $grow $shrink $basis;

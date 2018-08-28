@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-portfolio-header',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioHeaderComponent implements OnInit {
 
-  constructor() { }
+  static readonly ABOUT: string = 'about';
+  static readonly EXPERIENCE: string = 'experience';
+  static readonly EDUCATION: string = 'education';
+  static readonly CONTACT: string = 'contact';
+
+  selectedTab: string;
+
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit() {
+  }
+
+  isActive(tab: string): boolean {
+    return ('/' + tab === this.router.url);
   }
 
 }
