@@ -7,5 +7,6 @@
 }
 
 .app__main {
+  margin: 0 auto;
   @include flex(1);
 }

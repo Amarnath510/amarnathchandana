@@ -1,0 +1,12 @@
+@import '../../styles';
+
+.portfolio-about {
+  @include display-flex-only;
+  @include flex-direction(column);
+  @include align-content(center);
+  @include justify-content-center;
+  padding: 4em;
+}
+
+.portfolio-about__info {
+}
