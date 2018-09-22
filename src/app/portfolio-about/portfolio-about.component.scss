@@ -1,12 +1,26 @@
 @import '../../styles';
 
 .portfolio-about {
-  @include display-flex-only;
-  @include flex-direction(column);
-  @include align-content(center);
-  @include justify-content-center;
-  padding: 4em;
+
 }
 
 .portfolio-about__info {
+  font-size: $base-font-xlg;
+
+  p {
+    padding: 3px;
+  }
+}
+
+.portfolio-about__photo img {
+  max-width: 400px;
+  height: auto;
+}
+
+.portfolio-about__photo {
+  margin-top: 30px;
+}
+
+.portfolio-about__link_pramati {
+  @include text-link($red-pramati);
 }

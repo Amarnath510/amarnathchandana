@@ -1,12 +1,18 @@
 @import '../styles';
 
 .app {
+  height: 100vh;
   @include display-flex-only;
   @include flex-direction(column);
-  min-height: 100vh;
 }
 
 .app__main {
-  margin: 0 auto;
   @include flex(1);
+  overflow: auto;
+}
+
+.app__flex-layout {
+  @include display-flex-only;
+  @include justify-content-center;
+  // @include align-items(center);
 }

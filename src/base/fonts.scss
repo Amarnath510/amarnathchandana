@@ -3,7 +3,6 @@
 
 $font-family: 'Lato', sans-serif;
 $font-family-handwriting: 'Dancing Script', cursive;
-$font-family-icons: "Font Awesome 5 Brands";
 
 @mixin text-weight($weight: bold) {
   @if $weight == bold {

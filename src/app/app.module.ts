@@ -9,9 +9,11 @@ import { PortfolioAboutComponent } from './portfolio-about/portfolio-about.compo
 import { PortfolioEducationComponent } from './portfolio-education/portfolio-education.component';
 import { PortfolioExperienceComponent } from './portfolio-experience/portfolio-experience.component';
 import { PortfolioContactComponent } from './portfolio-contact/portfolio-contact.component';
+import { PortfolioSkillsComponent } from './portfolio-skills/portfolio-skills.component';
 
 const routes: Routes = [
   { path: 'about', component: PortfolioAboutComponent },
+  { path: 'skills', component: PortfolioSkillsComponent },
   { path: 'experience', component: PortfolioExperienceComponent },
   { path: 'education', component: PortfolioEducationComponent },
   { path: 'contact', component: PortfolioContactComponent },
@@ -27,7 +29,8 @@ const routes: Routes = [
     PortfolioAboutComponent,
     PortfolioEducationComponent,
     PortfolioExperienceComponent,
-    PortfolioContactComponent
+    PortfolioContactComponent,
+    PortfolioSkillsComponent
   ],
   imports: [
     BrowserModule,

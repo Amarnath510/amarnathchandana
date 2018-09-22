@@ -12,11 +12,13 @@
   font-size: $base-font-xxl;
   font-family: $font-family-handwriting;
   color: $white;
-  padding: 0.5rem;
+}
+
+.portfolio-header__nav-container {
+  @include flex(1);
 }
 
 .portfolio-header__nav {
-  @include flex(1);
   @include display-flex-only;
   @include justify-content-end;
   @include list-reset;
@@ -24,7 +26,7 @@
 
 .portfolio-header__nav a {
   display: block;
-  padding: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .portfolio-header__nav_active {
