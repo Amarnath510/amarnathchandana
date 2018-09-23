@@ -1,0 +1,33 @@
+@import '../../styles';
+
+.portfolio-skills {
+  // @include display-flex;
+  // @include flex-wrap;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media all and (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.portfolio-skills__card {
+  padding: 20px 30px;
+  margin: 30px;
+  border-radius: 5px;
+  @include box-shadow(30px);
+}
+
+.portfolio-skills__card-image {
+  width: 120px;
+  height: auto;
+}
+
+.portfolio-skills__card-name {
+  padding: 10px;
+}
+
+.portfolio-skills__card:hover {
+  @include animation-shake;
+}

@@ -206,3 +206,10 @@
 @mixin ms-align-content($align) {
   -ms-flex-line-pack: $align;
 }
+
+
+@mixin box-shadow($blur-radius: 10px, $color: grey, $h-offset: 0, $v-offset: 0) {
+  -moz-box-shadow: $h-offset $v-offset $blur-radius $color;
+  -webkit-box-shadow: $h-offset $v-offset $blur-radius $color;
+  box-shadow: $h-offset $v-offset $blur-radius $color;
+}

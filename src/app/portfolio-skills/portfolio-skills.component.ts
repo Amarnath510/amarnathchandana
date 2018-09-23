@@ -7,9 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioSkillsComponent implements OnInit {
 
+  static readonly skills = [
+    'HTML5',
+    'CSS',
+    'JavaScript',
+    'Java',
+    'Angular',
+    'TypeScript',
+    'MySQL',
+    'Mongo',
+    'Spring',
+    'REST'
+  ];
+
   constructor() { }
 
+  cards: any[] = [];
+
   ngOnInit() {
+    PortfolioSkillsComponent.skills.forEach(skill => {
+      this.cards.push( {'image': skill.toLowerCase(), 'name': skill} );
+    });
   }
 
 }
