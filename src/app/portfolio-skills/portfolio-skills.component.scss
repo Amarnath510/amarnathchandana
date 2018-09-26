@@ -1,15 +1,9 @@
 @import '../../styles';
 
 .portfolio-skills {
-  // @include display-flex;
-  // @include flex-wrap;
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr;
-
-  @media all and (max-width: 800px) {
-    grid-template-columns: 1fr;
-  }
+  @include display-flex;
+  @include flex-wrap;
+  @include justify-content-center;
 }
 
 .portfolio-skills__card {

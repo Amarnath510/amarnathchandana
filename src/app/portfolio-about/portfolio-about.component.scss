@@ -1,7 +1,9 @@
 @import '../../styles';
 
 .portfolio-about {
-
+  @include display-flex-only;
+  @include justify-content-center;
+  @include flex-direction(column);
 }
 
 .portfolio-about__info {

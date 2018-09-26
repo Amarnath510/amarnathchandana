@@ -8,13 +8,6 @@
 
 .app__main {
   @include flex(1);
-  overflow: auto;
   width: 80%;
   margin: 0 auto;
-}
-
-.app__flex-layout {
-  @include display-flex-only;
-  @include justify-content-center;
-  // @include align-items(center);
 }
