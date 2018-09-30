@@ -6,8 +6,8 @@
   @include justify-content-center;
   @include flex-direction(column);
   color: $white;
-  background: $dark;
-  padding: 1em;
+  // background: $dark;
+  padding: 2em;
 }
 
 .portfolio-footer__content {

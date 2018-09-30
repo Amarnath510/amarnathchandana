@@ -8,6 +8,14 @@ html, body {
   font-family: $font-family;
   font-size: $base-font-lg;
   @include text-weight(normal);
+  color: $white;
+  // To generate color background use:
+  // https://coolors.co/ to check color combinations then use 
+  // https://mycolor.space/gradient to generate color gradients
+}
+
+html, body {
+  background-image: radial-gradient(circle, #d08484, #d67f7f, #dd7a7a, #e27575, #e86f70);
 }
 
 a {

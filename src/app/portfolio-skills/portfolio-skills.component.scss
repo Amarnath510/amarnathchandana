@@ -7,10 +7,12 @@
 }
 
 .portfolio-skills__card {
-  padding: 20px 30px;
+  padding: 10px 25px;
   margin: 30px;
   border-radius: 5px;
   @include box-shadow(30px);
+  background-color: $lightcyan;
+  color: $dark;
 }
 
 .portfolio-skills__card-image {
@@ -19,9 +21,9 @@
 }
 
 .portfolio-skills__card-name {
-  padding: 10px;
+  padding: 5px;
 }
 
 .portfolio-skills__card:hover {
-  @include animation-shake;
+  // @include animation-shake;
 }

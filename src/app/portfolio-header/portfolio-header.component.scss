@@ -2,25 +2,22 @@
 
  .portfolio-header {
   @include display-flex-only;
-  @include align-items(center);
-  background: $deepskyblue;
+  @include flex-direction(column);
+  @include justify-content-center;
+  background-color: rgba(#A95050, 0.2);
   padding: 1em;
 }
 
 .portfolio-header__logo {
   text-transform: uppercase;
-  font-size: $base-font-xxl;
-  font-family: $font-family-handwriting;
+  font-size: $base-font-xxxl;
   color: $white;
-}
-
-.portfolio-header__nav-container {
-  @include flex(1);
+  margin-bottom: 20px;
 }
 
 .portfolio-header__nav {
   @include display-flex-only;
-  @include justify-content-end;
+  @include justify-content-center;
   @include list-reset;
 }
 

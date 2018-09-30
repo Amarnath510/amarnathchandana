@@ -4,6 +4,12 @@
   height: 100vh;
   @include display-flex-only;
   @include flex-direction(column);
+
+  // background: url(../assets/background/wooden_floor.jpg) no-repeat center center fixed; 
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
 }
 
 .app__main {

@@ -15,7 +15,7 @@ export class PortfolioSkillsComponent implements OnInit {
     'Angular',
     'TypeScript',
     'MySQL',
-    'Mongo',
+    // 'Mongo',
     'Spring',
     'REST'
   ];
