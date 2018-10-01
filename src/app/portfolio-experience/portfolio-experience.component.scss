@@ -1,1 +1,30 @@
 @import '../../styles';
+
+.portfolio-experience {
+  @include display-flex-only;
+  @include align-items(center);
+  @include flex-direction(column);
+}
+
+.portfolio-experience__card {
+  @include display-flex-only;
+  background-color: $white;
+  margin-top: 2rem;
+  padding: 2rem;
+  @include box-shadow(30px);
+  width: 700px;
+  border-radius: 10px;
+}
+
+.portfolio-experience__logo-container {
+  margin-right: 1rem;
+}
+
+.portfolio-experience__logo {
+  width: 60px;
+  height: auto;
+}
+
+.portfolio-experience__exp-details {
+  color: $dark;
+}
