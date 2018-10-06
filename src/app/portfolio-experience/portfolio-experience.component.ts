@@ -15,25 +15,25 @@ export class PortfolioExperienceComponent implements OnInit {
   static readonly ORG_DETAILS: any[] = [
     {
       'key': PortfolioExperienceComponent.PRAMATI,
-      'name': 'Pramati Technologies',
+      'org': 'Pramati Technologies',
       'url': 'https://www.pramati.com',
       'logo': 'Pramati'
     },
     {
       'key': PortfolioExperienceComponent.ORACLE,
-      'name': 'Oracle',
+      'org': 'Oracle India',
       'url': 'https://www.oracle.com/in/index.html',
       'logo': 'Oracle'
     },
     {
       'key': PortfolioExperienceComponent.ACCOLITE,
-      'name': 'Accolite Software',
+      'org': 'Accolite Software',
       'url': 'http://accolite.com',
       'logo': 'Accolite'
     },
     {
       'key': PortfolioExperienceComponent.MERCEDES,
-      'name': 'Mercedes Benz R & D',
+      'org': 'Mercedes Benz R & D',
       'url': 'https://mbrdi.co.in',
       'logo': 'Mercedes'
     }
@@ -42,40 +42,41 @@ export class PortfolioExperienceComponent implements OnInit {
   static readonly EXP_DETAILS: any[] = [
     {
       'key': PortfolioExperienceComponent.PRAMATI,
-      'sd': '27-Mar-2017',
+      'sd': 'Mar-2017',
       'ed': 'Present',
       'project': 'Castlight Health Navigation',
       'role': 'Senior Development Engineer',
       /* tslint:disable-next-line:max-line-length */
-      'description': 'Arm your employees with a virtual assistant to drive better healthcare decisions, powered by an extensive data set of medical claims, benefit designs, and provider quality. Intercept employees that are seeking care, and guide them to higher quality, lower cost options.',
+      'description': 'Full stack developer for Healthcare price transparency application where user can search for providers (Doctors, Hospitals, Labs), check for their details/prices, book appointments etc. across United States.',
       'technologies': 'Angular, TypeScript, JavaScript, HTML5, CSS, Java 8, Microservices, MySQL, Mongo'
     },
     {
       'key': PortfolioExperienceComponent.ORACLE,
-      'sd': '27-Mar-2017',
-      'ed': 'Present',
+      'sd': 'Feb-2014',
+      'ed': 'Mar-2017',
       'project': 'Oracle 12C',
       'role': 'Senior Member Technical Staff',
-      'description': 'Senior Developer for Oracle 12C project. ',
-      'technologies': 'Java 6, AngularJS, HTML5, CSS, Oracle 12C'
+      'description': 'Senior Java Developer for Oracle 12C project. Part of OJVM team at India Development Center.',
+      'technologies': 'Java 6, Oracle, AngularJS'
     },
     {
       'key': PortfolioExperienceComponent.ACCOLITE,
-      'sd': '27-Mar-2017',
-      'ed': 'Present',
+      'sd': 'May-2013',
+      'ed': 'Feb-2014',
       'role': 'Software Engineer',
       'project': 'British Telecom eServe portal',
-      'description': 'Full Stack Developer for British Telecom eServe portal.',
-      'technologies': 'Java 6, jQuery, HTML5, CSS'
+      /* tslint:disable-next-line:max-line-length */
+      'description': 'Full Stack Developer for British Telecom eServe portal. Application is an internal BT portal where an employee can check his Details, Statement of Accounts, Usage of funds etc.',
+      'technologies': 'Java 6, jQuery, HTML5, CSS, Jasper Reports'
     },
     {
       'key': PortfolioExperienceComponent.MERCEDES,
-      'sd': '27-Mar-2017',
-      'ed': 'Present',
+      'sd': 'Jul-2012',
+      'ed': 'May-2013',
       'role': 'Post Graduate Engineering Trainee',
       'project': 'Employee Supply Chain Management (eSCC)',
       /* tslint:disable-next-line:max-line-length */
-      'description': 'Post Graduate Engineering Trainee where I was part of the development team. Worked both on UI (using Swing) and backend (using core Java) to develop supply chain management application.',
+      'description': 'Java Developer for eSCC project. Worked both on UI (using Swing) and backend (using core Java) for Mercedes supply chain management application where the application main focus is on inventory.',
       'technologies': 'Java 6, Swing, IBM DB2'
     }
   ];
@@ -84,7 +85,7 @@ export class PortfolioExperienceComponent implements OnInit {
     PortfolioExperienceComponent.PRAMATI,
     PortfolioExperienceComponent.ORACLE,
     PortfolioExperienceComponent.ACCOLITE,
-    PortfolioExperienceComponent.MERCEDES
+    // PortfolioExperienceComponent.MERCEDES
   ];
 
   experience: any[] = [];

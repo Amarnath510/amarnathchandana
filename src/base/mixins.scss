@@ -7,6 +7,11 @@
   }
 }
 
+@mixin text-align($align: left) {
+  text-align: $align;
+  text-align-last: right;
+}
+
 @mixin list-reset() {
   list-style: none;
   padding: 0;

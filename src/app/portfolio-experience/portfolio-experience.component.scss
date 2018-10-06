@@ -8,23 +8,49 @@
 
 .portfolio-experience__card {
   @include display-flex-only;
-  background-color: $white;
+  @include box-shadow(10px);
+  background-color: #f7aaaa;
   margin-top: 2rem;
-  padding: 2rem;
-  @include box-shadow(30px);
   width: 700px;
-  border-radius: 10px;
+  border-radius: 5px;
+
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 .portfolio-experience__logo-container {
-  margin-right: 1rem;
-}
+  padding: 2rem;
+  background-color: $white;
 
-.portfolio-experience__logo {
-  width: 60px;
-  height: auto;
+  img {
+    max-width: 60px;
+    height: auto;
+  }
+
+  p {
+    margin-top: 10px;
+    color: $dark;
+    max-width: 60px;
+  }
 }
 
 .portfolio-experience__exp-details {
   color: $dark;
+  padding: 1rem;
+}
+
+.portfolio-experience__work {
+  @include box-shadow(10px);
+  padding: 3rem;
+  margin: 2rem;
+  background-color: $white;
+  border-radius: 5px;
+}
+
+.portfolio-experience__section-title {
+  @include text-align(right);
+  @include text-weight(thicker);
+  padding-right: 10px;
+  font-size: $base-font-lg;
 }

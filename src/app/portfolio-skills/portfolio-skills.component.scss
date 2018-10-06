@@ -2,17 +2,29 @@
 
 .portfolio-skills {
   @include display-flex;
-  @include flex-wrap;
   @include justify-content-center;
 }
 
+.portfolio-skills__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2px;
+  margin: 2rem;
+
+  @media all and (max-width: $screen-md) {
+    grid-template-columns: 1fr;
+  }
+}
+
 .portfolio-skills__card {
-  padding: 10px 25px;
-  margin: 30px;
+  padding: 20px 20px;
+  margin: 20px;
   border-radius: 5px;
-  @include box-shadow(30px);
-  background-color: $lightcyan;
+  @include box-shadow(10px);
+  background-color: $white;
   color: $dark;
+  max-width: 220px;
+  text-align: center;
 }
 
 .portfolio-skills__card-image {
@@ -22,8 +34,4 @@
 
 .portfolio-skills__card-name {
   padding: 5px;
-}
-
-.portfolio-skills__card:hover {
-  // @include animation-shake;
 }

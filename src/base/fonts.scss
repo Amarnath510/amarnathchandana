@@ -5,6 +5,11 @@ $font-family: 'Lato', sans-serif;
 $font-family-handwriting: 'Dancing Script', cursive;
 
 @mixin text-weight($weight: bold) {
+
+  @if $weight == thicker {
+    font-weight: 900;
+  }
+
   @if $weight == bold {
     font-weight: 700;
   }
@@ -12,8 +17,6 @@ $font-family-handwriting: 'Dancing Script', cursive;
   @if $weight == regular {
     font-weight: 300;
   }
-
-
 
   @if $weight == light {
     font-weight: 300;

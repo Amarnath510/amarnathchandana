@@ -1,18 +1,47 @@
 <section class="portfolio-experience">
-  <ng-container *ngFor="let exp of experience">
-    <div class="portfolio-experience__card">
-      <div class="portfolio-experience__logo-container">
-        <img src="../../assets/experience/{{exp.logo}}.svg" 
-            alt="{{exp.name + ' logo'}}"
-            class="portfolio-experience__logo">
-      </div>    
-      <div class="portfolio-experience__exp-details">
-        <div>Duration: <span>{{exp.sd}} - {{exp.ed}}</span></div>
-        <div>Role: {{ exp.role }}</div>
-        <div>Project: {{ exp.project}} </div>
-        <div>Description: {{ exp.description }}</div>
-        <div>Technologies: {{ exp.technologies }}</div>
+  <div class="portfolio-experience__work">
+    <ng-container *ngFor="let exp of experience">
+      <div class="portfolio-experience__card">
+        <div class="portfolio-experience__logo-container">
+          <a href="{{ exp.url }}" target="_blank">
+              <img src="../../assets/experience/{{exp.logo}}.svg" 
+              alt="{{exp.org + ' logo'}}"
+              title="{{ exp.org }}">
+          </a>
+          <p>{{ exp.key }}</p>
+        </div>
+        <div class="portfolio-experience__exp-details">
+          <table>
+            <tbody>
+              <tr>
+                <td class="portfolio-experience__section-title">Duration:</td>
+                <td>{{exp.sd}} to {{exp.ed}}</td>
+              </tr>
+              <tr>
+                <td class="portfolio-experience__section-title">Role:</td>
+                <td>{{ exp.role }}</td>
+              </tr>
+              <tr>
+                <td class="portfolio-experience__section-title">Project:</td>
+                <td>{{ exp.project }}</td>
+              </tr>
+              <tr>
+                <td class="portfolio-experience__section-title">Description:</td>
+                <td>{{ exp.description }}</td>
+              </tr>
+              <tr>
+                <td class="portfolio-experience__section-title">Technologies:</td>
+                <td>{{ exp.technologies }}</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- <div>Duration: <span>{{exp.sd}} - {{exp.ed}}</span></div>
+          <div>Role: {{ exp.role }}</div>
+          <div>Project: {{ exp.project}} </div>
+          <div>Description: {{ exp.description }}</div>
+          <div>Technologies: {{ exp.technologies }}</div> -->
+        </div>
       </div>
-    </div>
-  </ng-container>
+    </ng-container>
+  </div>
 </section>

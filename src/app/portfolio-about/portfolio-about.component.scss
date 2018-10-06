@@ -11,7 +11,7 @@
   margin: 30px 0;
   @include text-weight(regular);
 
-  @media all and (max-width: 500px) {
+  @media all and (max-width: $screen-md) {
     font-size: $base-font-lg;
   }
 }
@@ -27,12 +27,13 @@
     max-width: 400px;
     height: auto;
 
-    @media all and (max-width: 500px) {
+    @media all and (max-width: $screen-md) {
       max-width: 300px;
     }
   }
 }
 
 .portfolio-about__link_pramati {
-  @include text-link(#4F48CC);
+  // @include text-link(#4F48CC);
+  @include text-link(blue);
 }
