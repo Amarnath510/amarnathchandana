@@ -12,12 +12,12 @@ import { PortfolioContactComponent } from './portfolio-contact/portfolio-contact
 import { PortfolioSkillsComponent } from './portfolio-skills/portfolio-skills.component';
 
 const routes: Routes = [
-  { path: 'about', component: PortfolioAboutComponent, data: { title: 'About'} },
+  { path: 'about', component: PortfolioAboutComponent },
   { path: 'skills', component: PortfolioSkillsComponent },
   { path: 'experience', component: PortfolioExperienceComponent },
   { path: 'education', component: PortfolioEducationComponent },
-  { path: '', redirectTo: 'about', pathMatch: 'full' },
-  { path: '**', redirectTo: 'about', pathMatch: 'full' }
+  { path: '', redirectTo: '/about', pathMatch: 'full' },
+  { path: '**', redirectTo: '/about', pathMatch: 'full' }
 ];
 
 @NgModule({
