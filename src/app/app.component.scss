@@ -13,7 +13,7 @@
 }
 
 .app__main {
-  @include flex(1);
+  @include flex(1, 1, 100%);
   width: 80%;
   margin: 0 auto;
 }

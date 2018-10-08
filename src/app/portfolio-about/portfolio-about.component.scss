@@ -1,8 +1,10 @@
 @import '../../styles';
 
 .portfolio-about {
+  min-height: 100%;
   @include display-flex-only;
   @include justify-content-center;
+  @include align-items(center);
   @include flex-direction(column);
 }
 

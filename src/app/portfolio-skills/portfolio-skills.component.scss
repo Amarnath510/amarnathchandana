@@ -1,8 +1,10 @@
 @import '../../styles';
 
 .portfolio-skills {
+  min-height: 100%;
   @include display-flex;
   @include justify-content-center;
+  @include align-items(center);
 }
 
 .portfolio-skills__container {

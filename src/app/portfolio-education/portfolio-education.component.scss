@@ -1,7 +1,10 @@
 @import '../../styles';
 
 .portfolio-education {
-  
+  min-height: 100%;
+  @include display-flex-only;
+  @include align-items(center);
+  @include justify-content-center;
 }
 
 .portfolio-education__container {

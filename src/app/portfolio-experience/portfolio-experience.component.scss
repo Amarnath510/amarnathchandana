@@ -1,6 +1,7 @@
 @import '../../styles';
 
 .portfolio-experience {
+  min-height: 100%;
   @include display-flex-only;
   @include align-items(center);
   @include flex-direction(column);
