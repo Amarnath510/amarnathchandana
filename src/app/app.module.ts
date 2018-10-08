@@ -16,8 +16,8 @@ const routes: Routes = [
   { path: 'skills', component: PortfolioSkillsComponent },
   { path: 'experience', component: PortfolioExperienceComponent },
   { path: 'education', component: PortfolioEducationComponent },
-  { path: '', redirectTo: '/about', pathMatch: 'full' },
-  { path: '**', redirectTo: '/about', pathMatch: 'full' }
+  { path: '', redirectTo: 'about', pathMatch: 'full' },
+  { path: '**', redirectTo: 'about', pathMatch: 'full' }
 ];
 
 @NgModule({
