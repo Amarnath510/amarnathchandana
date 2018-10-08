@@ -1,3 +1,19 @@
-<p>
-  portfolio-education works!
-</p>
+<section class="portfolio-education">
+  <div class="portfolio-education__container">
+    <ng-container *ngFor="let edu of education">
+      <div class="portfolio-education__card">
+        <div class="portfolio-education__logo">
+          <a href="{{ edu.url }}" target="_blank">
+            <img src="../../assets/education/{{ edu.logo }}.svg" 
+                alt="{{ edu.school + ' logo' }}" />
+          </a>
+        </div>
+        <div class="portfolio-education__details">
+          <p>{{ edu.degree }}</p>
+          <p>{{ edu.course }}</p>
+          <p>{{ edu.passed }}</p>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</section>

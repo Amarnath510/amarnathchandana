@@ -14,19 +14,23 @@ export class PortfolioFooterComponent implements OnInit {
   ngOnInit() {
     this.accounts.push({
       'url': 'https://www.linkedin.com/in/amarnathchandana',
-      'icon': 'fab fa-linkedin-in'
+      'icon': 'fab fa-linkedin-in',
+      'title': 'Linked In'
     });
     this.accounts.push({
       'url': 'https://stackoverflow.com/u/967638',
-      'icon': 'fab fa-stack-overflow'
+      'icon': 'fab fa-stack-overflow',
+      'title': 'Stackoverflow'
     });
     this.accounts.push({
       'url': 'https://twitter.com/Amar2Chan',
-      'icon': 'fab fa-twitter'
+      'icon': 'fab fa-twitter',
+      'title': 'Twitter'
     });
     this.accounts.push({
       'url': 'https://github.com/Amarnath510',
-      'icon': 'fab fa-github'
+      'icon': 'fab fa-github',
+      'title': 'Github'
     });
   }
 

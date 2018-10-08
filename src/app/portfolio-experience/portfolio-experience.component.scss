@@ -9,9 +9,9 @@
 .portfolio-experience__card {
   @include display-flex-only;
   @include box-shadow(10px);
-  background-color: #f7aaaa;
+  background-color: #d7d2cc;
   margin-top: 2rem;
-  width: 700px;
+  // width: 700px;
   border-radius: 5px;
 
   &:first-child {
@@ -20,19 +20,23 @@
 }
 
 .portfolio-experience__logo-container {
-  padding: 2rem;
+  padding: 1rem;
   background-color: $white;
 
   img {
-    max-width: 60px;
+    max-width: 80px;
     height: auto;
   }
 
-  p {
+  @media all and (max-width: $screen-md) {
+    display: none;
+  }
+
+  /* p {
     margin-top: 10px;
     color: $dark;
     max-width: 60px;
-  }
+  } */
 }
 
 .portfolio-experience__exp-details {
@@ -53,4 +57,6 @@
   @include text-weight(thicker);
   padding-right: 10px;
   font-size: $base-font-lg;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }

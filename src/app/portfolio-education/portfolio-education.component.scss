@@ -1,0 +1,48 @@
+@import '../../styles';
+
+.portfolio-education {
+  
+}
+
+.portfolio-education__container {
+  @include display-flex-only;
+  @include justify-content-center;
+  margin: 1rem;
+
+  @media all and (max-width: $screen-md) {
+    @include flex-direction(column);
+    @include align-items(center);
+  }
+  
+}
+
+.portfolio-education__card {
+  @include box-shadow(20px);
+  background-color: $white;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  position: relative;
+
+  @media all and (max-width: $screen-md) {
+    width: 200px;
+  }
+}
+
+.portfolio-education__logo img {
+    width: 200px;
+    height: auto;
+
+    @media all and (max-width: $screen-md) {
+      width: 100px;
+    }
+}
+
+.portfolio-education__details {
+  color: $dark;
+  margin-top: 2rem;
+
+  p {
+    padding: 5px;
+  }
+}
