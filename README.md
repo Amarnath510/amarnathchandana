@@ -15,5 +15,8 @@ I made this Portfolio to showcase my UI skills.
 - Then run, `ngh` to publish the pages to Github. It will show successful message if everything is fine.
 - Now open, the url (in my case it is `https://amarnath510.github.io/portfolio/`) to see your beautiful application up and running.
 
-## Reference
-![](https://user-images.githubusercontent.com/4599623/46904836-345d0700-cf08-11e8-8072-551a587be1e1.png)
+## Build Reference
+![Build Reference](https://user-images.githubusercontent.com/4599623/46904836-345d0700-cf08-11e8-8072-551a587be1e1.png)
+
+## Application
+![Amarnath-About-Screenshot](https://user-images.githubusercontent.com/4599623/46904880-13e17c80-cf09-11e8-87a2-00c2a94cf068.png)
