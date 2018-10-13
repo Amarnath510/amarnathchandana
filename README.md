@@ -1,27 +1,18 @@
-# Portfolio
+# Amarnath Portfolio
+I made this Portfolio to showcase my UI skills. 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.1.
+## Technologies
+- HTML5
+- Angular 2
+- Typescript
+- CSS3, Flexbox, BEM naming convention
 
-## Development server
+## Step to create and deploy application on Github (might be helpful for others)
+- Create Angular application locally, run it (ng serve) and open `http://localhost:4200/`. If all is well then you will see your application up and running.
+- Open `Angular.json` see `outputPath` under `build/options`. Make sure you don't have any sub-path under `dist/`, that is the output path should be `"outputPath": "dist/"`.
+- Install `angular-cli-ghpages` (`npm install -g angular-cli-ghpages`) which is used to deploy Angular pages on Github.
+- Once installed run build with prod flag and href(`<Github_username>.github.io/<repository-name>`). So in my case it will be  `ng build --prod --base-href https://amarnath510.github.io/portfolio/` (**NOTE:** Don't forget the last slash after repo)
+- Then run, `ngh` to publish the pages to Github. It will show successful message if everything is fine.
+- Now open, the url (in my case it is `https://amarnath510.github.io/portfolio/`) to see your beautiful application up and running.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Reference
