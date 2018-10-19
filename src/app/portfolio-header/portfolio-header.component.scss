@@ -10,13 +10,15 @@
 }
 
 .portfolio-header__logo {
+  font-family: $font-family-bubble-gum;
   text-transform: uppercase;
-  font-size: $base-font-xxxl;
+  font-size: $base-font-header;
   color: $white;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
+  // text-shadow: 1px 1px $color-header;
 
   a {
-    color: #f77070;
+    color: $color-header;
   }
 }
 
