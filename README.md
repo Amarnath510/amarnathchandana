@@ -1,5 +1,5 @@
 # Amarnath Portfolio
-I made this Portfolio to showcase my UI skills. 
+I made this Portfolio to showcase my UI skills.
 
 ## Technologies
 - HTML5
@@ -7,7 +7,7 @@ I made this Portfolio to showcase my UI skills.
 - Typescript
 - CSS3, Flexbox, BEM naming convention
 
-## Step to create and deploy application on Github (might be helpful for others)
+## Steps to create and deploy application on Github
 - Create Angular application locally, run it (ng serve) and open `http://localhost:4200/`. If all is well then you will see your application up and running.
 - Open `Angular.json` see `outputPath` under `build/options`. Make sure you don't have any sub-path under `dist/`, that is the output path should be `"outputPath": "dist/"`.
 - Install `angular-cli-ghpages` (`npm install -g angular-cli-ghpages`) which is used to deploy Angular pages on Github.
